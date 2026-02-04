@@ -17,7 +17,7 @@ public void adicionarServiço(Servico servico){
 }
 public double calcularTotal(){
     return servicos.stream()
-        .mapToDouble(Servico::getCusto)
+        .mapToDouble(Servico::getValorUnitario)
         .sum();
 }
 public Obra getObra(){
